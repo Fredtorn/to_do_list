@@ -1,0 +1,50 @@
+.header {
+    color: #53150c;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.logoContainer {
+    position: relative;
+    text-align: center;
+}
+
+h1.headerText {
+    width: 100px;
+    justify-content: center;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+img.logo {
+    width: 150px;
+    height: 150px;
+}
+
+div.topNav {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #53150c;
+}
+
+a:hover {
+    text-decoration: underline wavy 2px;
+    text-underline-offset: 3px;
+
+}

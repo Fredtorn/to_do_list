@@ -1,0 +1,23 @@
+.informationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 300px;
+}
+
+h1.infoText {
+    color: #53150c;
+    font-family: sans-serif;
+    font-size: 72px;
+    text-shadow: 5px 5px 5px white;
+}
+
+ul {
+    font-family: sans-serif;
+    color: #53150c;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin-left: 10px;
+}

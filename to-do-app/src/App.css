@@ -1,0 +1,9 @@
+#root {
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #cadff5;
+  box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+img.flower_2 {
+    width: 450px;
+    height: 450px;
+}
+
+h1.startText {
+    font-family: sans-serif;
+    font-size: 72px;
+    color: #53150c;
+    text-align: center;
+    text-shadow: 5px 5px 5px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+div.startContainer {
+    position: relative;
+    text-align: center;
+}
