@@ -7,6 +7,7 @@ import flower from '../../assets/flower.png';
 const ToDoPage = ({ initialState = [] }) => {
 
     const [tasks, setTasks] = useState(initialState);
+
     useEffect(() => {
         if (tasks.length === 0) return;
         localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -14,7 +15,7 @@ const ToDoPage = ({ initialState = [] }) => {
 
     useEffect(() => {
         const tasks = JSON.parse(localStorage.getItem('tasks'));
-        setTasks(tasks);
+        setTasks(tasks || []);
     }, []);
 
     const addTask = (name) => {
@@ -41,7 +42,7 @@ const ToDoPage = ({ initialState = [] }) => {
 
     function getMessage() {
         const percentage = numberComplete / numberTotal * 100;
-        if (percentage === 0) {
+        if (tasks.length === 0) {
             return 'Try to add at least one! '
         }
         if (percentage === 100) {
@@ -86,7 +87,9 @@ const ToDoPage = ({ initialState = [] }) => {
                     <Task {...task}
                         onRename={newName => renameTask(index, newName)}
                         onTrash={() => removeTask(index)}
-                        onToggle={done => updateTaskDone(index, done)} />
+                        onToggle={done => updateTaskDone(index, done)}
+                        key={index}
+                    />
                 ))}
             </div>
         </main>
