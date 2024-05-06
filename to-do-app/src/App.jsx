@@ -7,8 +7,6 @@ import ToDoPage from './pages/ToDoPage/ToDoPage';
 import Header from './header/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
       <Header />
